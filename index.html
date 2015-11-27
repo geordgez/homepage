@@ -11,7 +11,7 @@
         var s = today.getSeconds();
         m = checkTime(m);
         s = checkTime(s);
-        document.getElementById('txt').innerHTML =
+        document.getElementById('time').innerHTML =
         h + ":" + m + ":" + s;
         var t = setTimeout(startTime, 500);
     }
@@ -20,13 +20,21 @@
         return i;
     }
     </script>
+
+    <script>
+    var d = new Date();
+    document.getElementById("date").innerHTML = d.toDateString();
+    </script>
+
 </head>
 
 <body onload="startTime()">
     <center>
     <br>
     ----------------------------------
-    <div id="txt" style="font-size:48px">Clock</div>
+    <div id="date">Date</div>
+    <br>
+    <div id="time" style="font-size:48px">Clock</div>
     ----------------------------------
     
     <p style="font-size:24px">
