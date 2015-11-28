@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <!-- Simple clock from http://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock -->
+    <script>
+    function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('time').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+    }
+    </script>
+
+</head>
+
+<body onload="startTime()">
+    <center>
+    <br>
+    ----------------------------------
+    <div id="time" style="font-size:48px">Clock</div>
+    ----------------------------------
+    
+    <p style="font-size:24px">
+    * * *
+      <br>| 
+      <a href="http://www.foodpro.huds.harvard.edu/foodpro/menu_items.asp?type=30&meal=1">HUDS</a> |
+      <a href="http://www.weather.com/weather/tenday/02138">Weather MA</a> | 
+      <a href="http://harvard.transloc.com/">Shuttle Tracker</a> |
+    
+    <br><br>
+    * * *
+      <br>| 
+      <a href="http://cs109.github.io/2015/">CS 109</a> |  
+      <a href="https://canvas.harvard.edu/courses/5666">CS 283</a> | 
+      <a href="https://canvas.harvard.edu/courses/5642">AM 115</a> | 
+      <a href="https://canvas.harvard.edu/courses/6580">AM 203</a> | 
+    
+    <br><br>
+    * * *
+      <br>| 
+      <a href="https://www.google.com">Google</a> | 
+      <a href="https://www.facebook.com">Facebook</a> | 
+      <a href="https://github.com/">GitHub</a> | 
+      <a href="https://groupme.com/">GroupMe</a> | 
+      <a href="http://www.mln.lib.ma.us/">Library</a> | 
+    
+    <br><br>
+    * * *
+      <br>| 
+      <a href="http://harvard.philo.com/">Philo</a> | 
+      <a href="https://hrapps.cadm.harvard.edu/psp/psftprd/?cmd=login&languageCd=ENG">PeopleSoft</a> | 
+      <a href="http://www.library.hbs.edu/go/capitaliq.html">CapIQ</a> | 
+    
+    <br><br>
+    * * *
+      <br>| 
+      <a href="https://tolconnected.bah.com/">TOL</a> | 
+      <a href="https://webmail.bah.com/my.policy">Webmail</a> | 
+      <a href="https://access.bah.com/my.policy">Access</a> | 
+      <a href="https://boozallen.onedrive.com/">OneDrive</a> | 
+      <a href="http://boozallen.sharepoint.com/">Wifi</a> |
+    </p>
+    </center>
+</body>
+</html>
