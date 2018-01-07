@@ -7,7 +7,7 @@
     <style>        
         html {
             font-size:30px;
-            font-size:8vmin;
+            font-size:7vmin;
         }
         @media(min-width:40em) {
             html {
@@ -15,7 +15,8 @@
             }
         }
         p {
-            line-height: 1.7;
+            line-height: 2.0;
+            white-space: nowrap;
         }
         a {
             color: #000000;
@@ -41,31 +42,12 @@
         }
     </style>
     <title>Homepage</title>
-    <!-- Simple clock from http://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock -->
-    <script>
-    function startTime() {
-        var today = new Date();
-        var h = today.getHours();
-        var m = today.getMinutes();
-        var s = today.getSeconds();
-        m = checkTime(m);
-        s = checkTime(s);
-        document.getElementById('time').innerHTML =
-        h + ":" + m + ":" + s;
-        var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-        return i;
-    }
-    </script>
 
 </head>
 
-<body onload="startTime()">
+<body>
     <center>
     <br>
-    <div id="time" style="font-size:48px">Clock</div>
     
     <p>
     <br>
