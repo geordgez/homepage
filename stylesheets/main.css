@@ -1,0 +1,39 @@
+html {
+    font-size:30px;
+    font-size:7vmin;
+}
+@media(min-width:40em) {
+    html {
+        font-size: 24px;
+    }
+}
+div.view-vertical-center {
+    position: relative;
+    line-height: 2.0;
+}
+hr {
+    color: #f0f0f0;
+    width: 70%;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+    padding: 2px 3px 3px 2px;
+    background-color: #ececec;
+    outline: none;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+a:hover {
+    color: #00257c;
+    background-color: #ffe7e7;
+}
+a:active {
+    background-color: #c4c4c4;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #333333;
+}
